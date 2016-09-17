@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   templateUrl: 'app.component.html',
   styleUrls:[
-    '/css/bootstrap.min.css'
+    '/css/bootstrap.min.css',
+    '/css/app.min.css'
   ]
 })
 
