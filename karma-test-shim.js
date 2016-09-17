@@ -1,4 +1,3 @@
-// /*global jasmine, __karma__, window*/
 Error.stackTraceLimit = Infinity;
 jasmine.DEFAULT_TIMEOUT_INTERVAL = 1000;
 
@@ -24,7 +23,7 @@ var allSpecFiles = Object.keys(window.__karma__.files)
 
 System.config({
   baseURL: '/base',
-  packageWithIndex: true // sadly, we can't use umd packages (yet?)
+  packageWithIndex: true
 });
 
 System.import('systemjs.config.js')
@@ -44,8 +43,6 @@ System.import('systemjs.config.js')
 
   })
   .then(function() {
-    // Finally, load all spec files.
-    // This will run the tests directly.
     return Promise.all(
       allSpecFiles.map(function (moduleName) {
         return System.import(moduleName);
