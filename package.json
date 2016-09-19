@@ -32,6 +32,7 @@
     "angular2-in-memory-web-api": "0.0.20",
     "angular2-quickstart": "^1.0.1",
     "bootstrap": "^3.3.6",
+    "bundles": "^2.0.0",
     "core-js": "^2.4.1",
     "ng-forward": "0.0.1-alpha.12",
     "reflect-metadata": "^0.1.8",
